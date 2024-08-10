@@ -277,11 +277,11 @@ EnsembleClassify[cls_Association, record_?VectorQ, "Votes"] :=
 EnsembleClassify[cls_Association, records_?MatrixQ, "Votes"] :=
     Map[First@Keys@TakeLargest[#, 1] &, EnsembleClassifierVotes[cls, records]];
 
-EnsembleClassify[cls_Association, record_?VectorQ, "ProbabilitiesMean"] :=
+EnsembleClassify[cls_Association, record_?VectorQ, "ProbabilitiesMean" | "Probabilities"] :=
     First@Keys@
         TakeLargest[Mean[Through[Values[cls][record, "Probabilities"]]], 1];
 
-EnsembleClassify[cls_Association, records_?MatrixQ, "ProbabilitiesMean"] :=
+EnsembleClassify[cls_Association, records_?MatrixQ, "ProbabilitiesMean" | "Probabilities"] :=
     Map[First@Keys@TakeLargest[#, 1] &,
       EnsembleClassifierProbabilities[cls, records]];
 
