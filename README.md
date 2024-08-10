@@ -88,6 +88,6 @@ ROCPlot[rocRange, aROCs]
 ```
 
 
-Anton Antonov
-2016-10-12 Winderemere, FL, USA
-2024-08-10 Winderemere, FL, USA
+Anton Antonov   
+2016-10-12 Winderemere, FL, USA    
+2024-08-10 Winderemere, FL, USA   
