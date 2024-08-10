@@ -18,7 +18,7 @@ if its average probability is above the threshold.
 The functions in this package are especially useful when used together with functions of
 the paclet 
 ["ROCFunctions"](https://resources.wolframcloud.com/PacletRepository/resources/AntonAntonov/ROCFunctions/),
-[GitHub](https://github.com/antononcube/WL-ROCFunctions-paclet). 
+([GitHub](https://github.com/antononcube/WL-ROCFunctions-paclet)). 
 
 An attempt to import the package ROCFunctions.m is made if definitions of its functions are not found.
 
