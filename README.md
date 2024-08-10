@@ -77,6 +77,7 @@ EnsembleClassifyByThreshold[aCLs, testData[[1 ;; 12, 1 ;; -2]], "survived" -> 0.
 
 ## Threshold classification with ROC
 
+```mathemaica
 rocRange = Range[0, 1, 0.1];
 aROCs =
   Table[(cres = EnsembleClassifyByThreshold[aCLs, testData[[All, 1 ;; -2]], "survived" -> i];
@@ -84,10 +85,9 @@ aROCs =
         {i, rocRange}];
 
 ROCPlot[rocRange, aROCs]
+```
 
-
-This file was created by Mathematica Plugin for IntelliJ IDEA.
 
 Anton Antonov
-2016-10-12
-Winderemere, FL, 2016
+2016-10-12 Winderemere, FL, USA
+2024-08-10 Winderemere, FL, USA
